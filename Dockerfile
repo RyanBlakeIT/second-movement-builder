@@ -40,9 +40,9 @@ RUN apt-get update && \
 #ENV EM_CONFIG /emconfig
 #RUN emcc --generate-config
 
-RUN git clone https://github.com/joeycastillo/second-movement.git
+RUN git clone https://github.com/joeycastillo/second-movement.git /second-movement
 
-WORKDIR second-movement/
+WORKDIR /second-movement
 
 RUN git submodule update --init && git config --system --add safe.directory /second-movement
 
