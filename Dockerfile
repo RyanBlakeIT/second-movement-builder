@@ -23,7 +23,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && \
-  apt-get install -y --no-install-recommends llvm lld & \
+  apt-get install -y --no-install-recommends llvm lld && \
   rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && \
