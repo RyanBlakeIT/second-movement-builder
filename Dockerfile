@@ -1,6 +1,6 @@
 FROM openresty/openresty:bookworm
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # These should all be one big install,
 # but the fly.io registry kept dying on big layer transfers...
